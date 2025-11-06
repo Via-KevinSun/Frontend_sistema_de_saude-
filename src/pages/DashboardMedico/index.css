@@ -1,0 +1,220 @@
+/* src/pages/DashboardMedico/index.css */
+.dashboard-medico {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #27ae60;
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.btn-sair {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-card.pendente { border-left: 5px solid #f1c40f; }
+.stat-card.concluido { border-left: 5px solid #27ae60; }
+
+.stat-card h3 {
+  margin: 0 0 10px 0;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.numero {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.secoes {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.secao {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.secao.alerta {
+  border-top: 5px solid #e74c3c;
+}
+
+.secao h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.vazio {
+  color: #95a5a6;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.lista-consultas, .lista-triagens {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.consulta-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.consulta-card.realizada {
+  opacity: 0.7;
+  background: #d5efdf;
+}
+
+.info-paciente strong {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.detalhes {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.tipo {
+  background: #3498db;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.hora {
+  font-weight: bold;
+}
+
+.btn-realizada {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.concluido {
+  background: #27ae60;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.triagem-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fdf2f2;
+  border-left: 5px solid #e74c3c;
+}
+
+.triagem-card.atencao {
+  background: #fef9e7;
+  border-left-color: #f1c40f;
+}
+
+.resultado strong {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+.acoes-rapidas {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.acoes-rapidas h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn-acao {
+  background: #27ae60;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .stats-grid, .secoes {
+    grid-template-columns: 1fr;
+  }
+  .header { flex-direction: column; gap: 15px; }
+  .consulta-card { flex-direction: column; align-items: flex-start; }
+}

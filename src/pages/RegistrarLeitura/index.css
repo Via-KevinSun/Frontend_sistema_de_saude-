@@ -1,0 +1,119 @@
+/* src/pages/RegistrarLeitura/index.css */
+.registrar-leitura-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.registrar-leitura-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.busca-utente {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.busca-utente input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.resultados-busca {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.item-utente {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.item-utente:hover {
+  background: #f0f8ff;
+}
+
+.utente-selecionado {
+  background: #e8f5e9;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.leitura-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.leitura-form select,
+.leitura-form input {
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.acoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.acoes button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acoes button[type="submit"] {
+  background: #27ae60;
+  color: white;
+}
+
+.acoes button[type="button"] {
+  background: #95a5a6;
+  color: white;
+}
+
+.alerta {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.alerta.sucesso {
+  background: #d5efdf;
+  color: #27ae60;
+}
+
+.alerta.erro {
+  background: #fadbd8;
+  color: #e74c3c;
+}

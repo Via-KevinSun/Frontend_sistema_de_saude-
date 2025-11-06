@@ -1,0 +1,165 @@
+/* src/pages/Utentes/index.css */
+.utentes-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.utentes-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.busca-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.busca-input {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.form-section, .lista-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.form-section h2, .lista-section h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.form-grid input, .form-grid select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button[type="submit"] {
+  background: #27ae60;
+  color: white;
+}
+
+button[type="button"] {
+  background: #95a5a6;
+  color: white;
+}
+
+.utentes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.utente-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.utente-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background: #3498db;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sexo {
+  font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.card-body p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.card-actions {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit {
+  background: #f39c12;
+  color: white;
+  flex: 1;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  flex: 1;
+}
+
+.alert {
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.alert.success {
+  background: #d5efdf;
+  color: #27ae60;
+}
+
+.alert.error {
+  background: #fadbd8;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,152 @@
+/* src/pages/Relatorio/index.css */
+.relatorio-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.relatorio-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.relatorio-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.campo select,
+.campo input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-gerar {
+  padding: 14px 40px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.alerta.erro {
+  background: #fadbd8;
+  color: #e74c3c;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.resultado-relatorio {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cabecalho-resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-pdf {
+  padding: 12px 25px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.grid-relatorio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.card-relatorio {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card-relatorio h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #27ae60;
+  padding-bottom: 10px;
+}
+
+.grafico {
+  height: 300px;
+  margin: 20px 0;
+}
+
+.tabela-relatorio {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-relatorio th {
+  background: #34495e;
+  color: white;
+}
+
+.resumo-final {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e8f5e9;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .grid-relatorio {
+    grid-template-columns: 1fr;
+  }
+  .relatorio-form {
+    flex-direction: column;
+  }
+}

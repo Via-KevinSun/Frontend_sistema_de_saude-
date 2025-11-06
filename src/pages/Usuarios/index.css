@@ -1,0 +1,98 @@
+.usuarios-container {
+  padding: 20px;
+}
+
+.usuarios-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.form-section, .lista-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.form-section h2, .lista-section h2 {
+  margin-top: 0;
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: #27ae60;
+  color: white;
+}
+
+button[type="button"] {
+  background: #95a5a6;
+  color: white;
+}
+
+.usuarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.usuarios-table th, .usuarios-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.usuarios-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.btn-edit {
+  background: #f39c12;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.alert {
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.alert.success {
+  background: #d5efdf;
+  color: #27ae60;
+}
+
+.alert.error {
+  background: #fadbd8;
+  color: #e74c3c;
+}

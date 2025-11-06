@@ -1,0 +1,134 @@
+/* src/pages/CriarPrescricao/index.css */
+.criar-prescricao-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.criar-prescricao-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.busca-consulta {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.busca-consulta input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.resultados {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:hover {
+  background: #f0f8ff;
+}
+
+.item span {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.paciente-selecionado {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+  border: 2px solid #27ae60;
+}
+
+.prescricao-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.prescricao-form input,
+.prescricao-form textarea {
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.prescricao-form textarea {
+  resize: vertical;
+}
+
+.acoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.acoes button {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acoes button[type="submit"] {
+  background: #27ae60;
+  color: white;
+}
+
+.acoes button[type="button"] {
+  background: #95a5a6;
+  color: white;
+}
+
+.alerta {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.alerta.sucesso {
+  background: #d5efdf;
+  color: #27ae60;
+}
+
+.alerta.erro {
+  background: #fadbd8;
+  color: #e74c3c;
+}
